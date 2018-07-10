@@ -8,14 +8,24 @@
 
 <!DOCTYPE html>
 <html lang="es" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
-    <p> hola </p>
-    <script type="text/javascript">
-      $("p").addClass("red");
-    </script>
-  </body>
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <style>
+    .red{
+      color: red;
+    }
+  </style>
+</head>
+
+<body>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+  <p> hola </p>
+  <script type="text/javascript">
+    $("p").addClass("red");
+  </script>
+</body>
+
 </html>
