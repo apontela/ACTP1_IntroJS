@@ -10,10 +10,19 @@
     <title></title>
   </head>
   <body>
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
     <p> clic !! </p>
     <p> clic !! </p>
     <p> clic !! </p>
     <h3> no clic !! </h3>
     <p> clic !! </p>
+    <script>
+      $("p").on("click", function(){
+        alert("Cuidado!")
+      })
+    </script>
   </body>
 </html>
