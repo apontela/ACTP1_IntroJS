@@ -22,11 +22,25 @@ Para la solución puedes inspirarte en: https://codepen.io/gabrieleromanato/pen/
 
 <!DOCTYPE html>
 <html lang="es" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
 
-  </body>
+<head>
+  <meta charset="utf-8">
+  <title></title>
+</head>
+
+<body>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+    <img src="https://images.unsplash.com/photo-1486578077620-8a022ddd481f?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=85550af4293fee2c13a9754e45eb8a52&w=1000&q=80" alt="">
+  <script>
+    $(function () {
+      $("img").on("contextmenu", function (e) {
+        e.preventDefault();
+        alert("¡Ésta imagen está protegida por derechos de autor!")
+      });
+    });
+  </script>
+
+</body>
+
 </html>
